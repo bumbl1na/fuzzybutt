@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FuzzyButts Rescue | We Get 'Em Down</title>
+  <meta name="description" content="FuzzyButts Rescue is a nonprofit dedicated to rescuing animals stuck in trees. Because no critter left behind." />
+
+  <!-- Google Fonts: Permanent Marker (handwritten accent), Oswald (bold heading), Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo" aria-label="FuzzyButts Rescue Home">
+        <span class="nav__logo-icon" aria-hidden="true">🐱</span>
+        <span class="nav__logo-text">FuzzyButts<span class="nav__logo-rescue">Rescue</span></span>
+      </a>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__links" id="nav-links" role="list">
+        <li><a href="#mission" class="nav__link">Mission</a></li>
+        <li><a href="#services" class="nav__link">Services</a></li>
+        <li><a href="#impact" class="nav__link">Impact</a></li>
+        <li><a href="#how-it-works" class="nav__link">How It Works</a></li>
+        <li><a href="#stories" class="nav__link">Stories</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Donate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero" aria-label="Hero">
+    <div class="hero__bg-shapes" aria-hidden="true">
+      <svg class="hero__tree" viewBox="0 0 200 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- Tree trunk -->
+        <rect x="88" y="240" width="24" height="160" rx="4" fill="#1a1a1a"/>
+        <!-- Branches -->
+        <path d="M100 240 Q60 200 40 160 Q80 170 100 200 Q120 170 160 160 Q140 200 100 240" fill="#1a1a1a"/>
+        <path d="M100 190 Q70 155 55 120 Q90 132 100 160 Q110 132 145 120 Q130 155 100 190" fill="#222"/>
+        <path d="M100 145 Q78 115 65 85 Q95 98 100 125 Q105 98 135 85 Q122 115 100 145" fill="#2a2a2a"/>
+        <!-- Cat silhouette sitting on a branch -->
+        <ellipse cx="148" cy="152" rx="12" ry="8" fill="#FF6B00"/>
+        <circle cx="148" cy="141" r="7" fill="#FF6B00"/>
+        <path d="M142 135 L140 128 L145 133" fill="#FF6B00"/>
+        <path d="M154 135 L156 128 L151 133" fill="#FF6B00"/>
+        <path d="M148 148 Q165 152 168 162" stroke="#FF6B00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <div class="hero__content container">
+      <p class="hero__eyebrow">
+        <span class="marker-text">nonprofit animal rescue</span>
+      </p>
+      <h1 class="hero__headline">
+        Stuck<span class="hero__headline--accent"> Up There?</span><br />
+        <span class="hero__headline--sub">We've Got This.</span>
+      </h1>
+      <p class="hero__body">
+        FuzzyButts Rescue is dedicated to getting your beloved pets — and wild critters — safely down from trees, rooftops, and other precarious perches. Fast, safe, and always with love.
+      </p>
+      <div class="hero__annotation" aria-hidden="true">
+        <svg class="annotation-arrow" viewBox="0 0 80 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 50 Q30 10 70 15" stroke="#FF6B00" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <path d="M62 8 L72 15 L61 22" stroke="#FF6B00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <span class="marker-text hero__annotation-text">Yes, we mean it.</span>
+      </div>
+      <div class="hero__ctas">
+        <a href="#contact" class="btn btn--primary">Get Help Now</a>
+        <a href="#mission" class="btn btn--ghost">Learn More</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span>scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== TICKER STRIP ===== -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>🐱 CATS &nbsp;✦&nbsp;</span>
+      <span>🦎 LIZARDS &nbsp;✦&nbsp;</span>
+      <span>🦜 BIRDS &nbsp;✦&nbsp;</span>
+      <span>🐶 DOGS &nbsp;✦&nbsp;</span>
+      <span>🐿️ SQUIRRELS &nbsp;✦&nbsp;</span>
+      <span>🦝 RACCOONS &nbsp;✦&nbsp;</span>
+      <span>🐰 RABBITS &nbsp;✦&nbsp;</span>
+      <span>🐈 ALL FUZZY CREATURES &nbsp;✦&nbsp;</span>
+      <!-- duplicate for seamless loop -->
+      <span>🐱 CATS &nbsp;✦&nbsp;</span>
+      <span>🦎 LIZARDS &nbsp;✦&nbsp;</span>
+      <span>🦜 BIRDS &nbsp;✦&nbsp;</span>
+      <span>🐶 DOGS &nbsp;✦&nbsp;</span>
+      <span>🐿️ SQUIRRELS &nbsp;✦&nbsp;</span>
+      <span>🦝 RACCOONS &nbsp;✦&nbsp;</span>
+      <span>🐰 RABBITS &nbsp;✦&nbsp;</span>
+      <span>🐈 ALL FUZZY CREATURES &nbsp;✦&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ===== MISSION ===== -->
+  <section class="mission" id="mission" aria-labelledby="mission-heading">
+    <div class="container mission__grid">
+      <div class="mission__visual reveal-left" aria-hidden="true">
+        <div class="mission__visual-card">
+          <svg viewBox="0 0 280 320" fill="none" xmlns="http://www.w3.org/2000/svg" class="mission__svg">
+            <!-- Rescuer with ladder -->
+            <rect x="120" y="180" width="14" height="140" rx="3" fill="#FF6B00" opacity="0.9"/>
+            <rect x="146" y="180" width="14" height="140" rx="3" fill="#FF6B00" opacity="0.9"/>
+            <!-- Rungs -->
+            <rect x="120" y="200" width="40" height="5" rx="2" fill="#e05500"/>
+            <rect x="120" y="220" width="40" height="5" rx="2" fill="#e05500"/>
+            <rect x="120" y="240" width="40" height="5" rx="2" fill="#e05500"/>
+            <rect x="120" y="260" width="40" height="5" rx="2" fill="#e05500"/>
+            <rect x="120" y="280" width="40" height="5" rx="2" fill="#e05500"/>
+            <rect x="120" y="300" width="40" height="5" rx="2" fill="#e05500"/>
+            <!-- Person silhouette on ladder -->
+            <circle cx="127" cy="165" r="14" fill="#222"/>
+            <rect x="118" y="178" width="18" height="28" rx="4" fill="#222"/>
+            <!-- Cat in tree being reached for -->
+            <ellipse cx="200" cy="100" rx="20" ry="13" fill="#3DFF6E"/>
+            <circle cx="200" cy="84" r="11" fill="#3DFF6E"/>
+            <path d="M191 77 L188 68 L195 75" fill="#3DFF6E"/>
+            <path d="M209 77 L212 68 L205 75" fill="#3DFF6E"/>
+            <path d="M200 112 Q218 118 224 130" stroke="#3DFF6E" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <!-- Tree -->
+            <rect x="190" y="130" width="20" height="190" rx="4" fill="#1a1a1a"/>
+            <ellipse cx="200" cy="110" rx="55" ry="45" fill="#111"/>
+            <ellipse cx="175" cy="95" rx="35" ry="28" fill="#141414"/>
+            <ellipse cx="225" cy="95" rx="35" ry="28" fill="#141414"/>
+          </svg>
+          <div class="mission__visual-badge marker-text">"No critter<br/>left behind."</div>
+        </div>
+      </div>
+
+      <div class="mission__text reveal">
+        <p class="section-label">our mission</p>
+        <h2 class="section-heading" id="mission-heading">
+          We Believe Every Animal<br />
+          <span class="underline-accent">Deserves a Safe Landing.</span>
+        </h2>
+        <p class="body-text">
+          FuzzyButts Rescue was founded on a simple idea: animals get stuck, and they need help getting down — without fear, injury, or a traumatic fall. We respond to emergency calls around the clock, providing professional, humane rescues for cats, dogs, wildlife, and anything else that finds itself too high up and too scared to get down.
+        </p>
+        <p class="body-text">
+          We're a 501(c)(3) nonprofit, fully funded by community donations and grants. Every rescue is free to the animal's owner — because when there's a pet in a tree, money shouldn't be the reason they stay there.
+        </p>
+        <div class="mission__callout marker-text">
+          ← 100% free to families in need.
+        </div>
+        <a href="#how-it-works" class="btn btn--primary btn--sm">See How We Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="services" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="services__header">
+        <p class="section-label section-label--light">what we do</p>
+        <h2 class="section-heading section-heading--light" id="services-heading">
+          We Rescue. We Reunite.<br />
+          <span class="marker-text services__heading-marker">We Celebrate Every Single Time.</span>
+        </h2>
+      </div>
+
+      <div class="services__grid stagger">
+        <article class="service-card" aria-labelledby="svc-1">
+          <div class="service-card__icon" aria-hidden="true">🐱</div>
+          <h3 class="service-card__title" id="svc-1">Cat &amp; Pet Rescues</h3>
+          <p class="service-card__body">The classic. Domestic cats are natural climbers but lousy descenders. We use specialized tree-climbing equipment to reach your kitty safely and bring them home.</p>
+          <div class="service-card__tag marker-text">most common call</div>
+        </article>
+
+        <article class="service-card service-card--accent" aria-labelledby="svc-2">
+          <div class="service-card__icon" aria-hidden="true">🦜</div>
+          <h3 class="service-card__title" id="svc-2">Wildlife Assists</h3>
+          <p class="service-card__body">Injured birds, frightened squirrels, confused raccoons — wild animals deserve safe rescue too. We work alongside local wildlife rehabbers for proper follow-up care.</p>
+          <div class="service-card__tag marker-text">wild &amp; wonderful</div>
+        </article>
+
+        <article class="service-card" aria-labelledby="svc-3">
+          <div class="service-card__icon" aria-hidden="true">⚡</div>
+          <h3 class="service-card__title" id="svc-3">Emergency Response</h3>
+          <p class="service-card__body">Animals stuck in electrical hazards, tangled in lines, or in immediate danger. We coordinate with utility companies and respond as quickly as humanly possible.</p>
+          <div class="service-card__tag marker-text">24 / 7</div>
+        </article>
+
+        <article class="service-card" aria-labelledby="svc-4">
+          <div class="service-card__icon" aria-hidden="true">🏠</div>
+          <h3 class="service-card__title" id="svc-4">Rooftop &amp; Structure Rescues</h3>
+          <p class="service-card__body">Not just trees. We handle animals stuck on rooftops, window ledges, and other elevated structures. If a critter is stuck up high, we'll come figure it out.</p>
+          <div class="service-card__tag marker-text">beyond the branches</div>
+        </article>
+
+        <article class="service-card service-card--green" aria-labelledby="svc-5">
+          <div class="service-card__icon" aria-hidden="true">🤝</div>
+          <h3 class="service-card__title" id="svc-5">Community Education</h3>
+          <p class="service-card__body">Prevention is powerful. We visit schools, community events, and neighborhoods to teach people how to keep their pets safe and what to do when an animal gets stuck.</p>
+          <div class="service-card__tag marker-text">knowledge = power</div>
+        </article>
+
+        <article class="service-card" aria-labelledby="svc-6">
+          <div class="service-card__icon" aria-hidden="true">💛</div>
+          <h3 class="service-card__title" id="svc-6">Volunteer Training</h3>
+          <p class="service-card__body">Want to be the person climbing trees to save cats? We train and certify rescue volunteers with proper safety equipment, animal handling, and rescue techniques.</p>
+          <div class="service-card__tag marker-text">join the crew</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== IMPACT STATS ===== -->
+  <section class="impact" id="impact" aria-labelledby="impact-heading">
+    <div class="container">
+      <p class="section-label">by the numbers</p>
+      <h2 class="section-heading" id="impact-heading">
+        Real Animals. Real Rescues.
+        <span class="impact__heading-annotation marker-text" aria-label="and counting!">and counting!</span>
+      </h2>
+
+      <div class="stats-grid stagger">
+        <div class="stat-item">
+          <span class="stat-item__number" data-target="2847">0</span>
+          <span class="stat-item__label">Animals Rescued</span>
+          <div class="stat-item__underline" aria-hidden="true"></div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-item__number" data-target="98">0</span><span class="stat-item__suffix">%</span>
+          <span class="stat-item__label">Safe Return Rate</span>
+          <div class="stat-item__underline" aria-hidden="true"></div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-item__number" data-target="47">0</span>
+          <span class="stat-item__label">Trained Volunteers</span>
+          <div class="stat-item__underline" aria-hidden="true"></div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-item__number" data-target="24">0</span><span class="stat-item__suffix">/7</span>
+          <span class="stat-item__label">Always On Call</span>
+          <div class="stat-item__underline" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <div class="impact__quote reveal">
+        <blockquote>
+          <p>"They showed up at 2am in the rain for our cat. I cried the whole time. These people are angels with ladders."</p>
+          <cite>— <span class="marker-text">Sarah M., Rescue Family</span></cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="how-it-works" id="how-it-works" aria-labelledby="hiw-heading">
+    <div class="container">
+      <p class="section-label section-label--light">the process</p>
+      <h2 class="section-heading section-heading--light" id="hiw-heading">Getting Down Is Easier<br /><span class="underline-accent--light">Than You Think.</span></h2>
+
+      <div class="steps stagger">
+        <div class="step" aria-label="Step 1">
+          <div class="step__number" aria-hidden="true">01</div>
+          <div class="step__content">
+            <h3 class="step__title">You Call. We Answer.</h3>
+            <p class="step__body">Day or night, rain or shine — reach out by phone, text, or our online form. We'll get your details and dispatch the nearest available volunteer.</p>
+            <div class="step__marker marker-text" aria-hidden="true">usually under 30 mins ↗</div>
+          </div>
+        </div>
+
+        <div class="step__connector" aria-hidden="true">
+          <svg viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 20 Q20 5 55 20" stroke="#FF6B00" stroke-width="2" stroke-dasharray="4 3" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+
+        <div class="step" aria-label="Step 2">
+          <div class="step__number" aria-hidden="true">02</div>
+          <div class="step__content">
+            <h3 class="step__title">We Assess the Situation.</h3>
+            <p class="step__body">On arrival, we evaluate the animal's condition, the tree or structure, and the safest approach. Every rescue is different — we treat each one seriously.</p>
+            <div class="step__marker marker-text" aria-hidden="true">safety first, always ✓</div>
+          </div>
+        </div>
+
+        <div class="step__connector" aria-hidden="true">
+          <svg viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 20 Q20 5 55 20" stroke="#FF6B00" stroke-width="2" stroke-dasharray="4 3" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+
+        <div class="step" aria-label="Step 3">
+          <div class="step__number" aria-hidden="true">03</div>
+          <div class="step__content">
+            <h3 class="step__title">Up the Tree We Go.</h3>
+            <p class="step__body">Our certified rescuers climb using professional arborist equipment. We move slow, stay calm, and let the animal come to us whenever possible — stress reduction is key.</p>
+            <div class="step__marker marker-text" aria-hidden="true">certified climbers 🌲</div>
+          </div>
+        </div>
+
+        <div class="step__connector" aria-hidden="true">
+          <svg viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 20 Q20 5 55 20" stroke="#FF6B00" stroke-width="2" stroke-dasharray="4 3" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+
+        <div class="step" aria-label="Step 4">
+          <div class="step__number" aria-hidden="true">04</div>
+          <div class="step__content">
+            <h3 class="step__title">Reunion Time. 🎉</h3>
+            <p class="step__body">Safe and sound, your animal is returned to you. We do a quick health check to make sure they're okay, offer care guidance, and share in the happy moment.</p>
+            <div class="step__marker marker-text" aria-hidden="true">our favorite part ❤️</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STORIES ===== -->
+  <section class="stories" id="stories" aria-labelledby="stories-heading">
+    <div class="container">
+      <p class="section-label">rescue stories</p>
+      <h2 class="section-heading" id="stories-heading">
+        The Ones That Keep Us<br />
+        <span class="underline-accent">Climbing.</span>
+      </h2>
+
+      <div class="stories__grid stagger">
+        <article class="story-card">
+          <div class="story-card__image" aria-label="A tabby cat rescued from a 40-foot oak tree">
+            <div class="story-card__placeholder" aria-hidden="true">
+              <span class="story-card__emoji">🐱</span>
+              <span class="story-card__tree-emoji">🌳</span>
+            </div>
+          </div>
+          <div class="story-card__body">
+            <div class="story-card__meta">
+              <span class="story-card__tag">CAT RESCUE</span>
+              <span class="story-card__time">3 days stuck</span>
+            </div>
+            <h3 class="story-card__title">Mango the Adventurer</h3>
+            <p class="story-card__text">Mango climbed 40 feet up an oak tree and decided that was as far as his adventure would go. Three days of coaxing, and our team got him safely down with a catch-bag and a lot of patience.</p>
+            <div class="story-card__detail marker-text">"He ate an entire bowl of food the second he was down." 😂</div>
+          </div>
+        </article>
+
+        <article class="story-card story-card--featured">
+          <div class="story-card__image" aria-label="A great horned owl rescued from power lines">
+            <div class="story-card__placeholder" aria-hidden="true">
+              <span class="story-card__emoji">🦉</span>
+              <span class="story-card__tree-emoji">⚡</span>
+            </div>
+          </div>
+          <div class="story-card__body">
+            <div class="story-card__meta">
+              <span class="story-card__tag story-card__tag--featured">WILDLIFE</span>
+              <span class="story-card__time">emergency call</span>
+            </div>
+            <h3 class="story-card__title">The Midnight Owl</h3>
+            <p class="story-card__text">A great horned owl got a talon tangled in a communications line at midnight. We coordinated with the utility company, climbed in the dark with headlamps, and freed her within 90 minutes. She flew off immediately.</p>
+            <div class="story-card__detail marker-text">One of our proudest moments. 🖤</div>
+          </div>
+        </article>
+
+        <article class="story-card">
+          <div class="story-card__image" aria-label="Two kittens rescued from a rooftop">
+            <div class="story-card__placeholder" aria-hidden="true">
+              <span class="story-card__emoji">🐈‍⬛</span>
+              <span class="story-card__tree-emoji">🏠</span>
+            </div>
+          </div>
+          <div class="story-card__body">
+            <div class="story-card__meta">
+              <span class="story-card__tag">ROOFTOP</span>
+              <span class="story-card__time">2 kittens</span>
+            </div>
+            <h3 class="story-card__title">Pickle &amp; Biscuit</h3>
+            <p class="story-card__text">Two 10-week-old kittens somehow made it onto a three-story roof and couldn't get back down. Both were dehydrated but otherwise fine after a very careful dual extraction.</p>
+            <div class="story-card__detail marker-text">Named them ourselves. No regrets.</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="stories__cta">
+        <p class="stories__cta-text">Have a rescue story to share? <span class="marker-text">We'd love to hear it.</span></p>
+        <a href="#contact" class="btn btn--outline">Share Your Story</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DONATE / CTA ===== -->
+  <section class="donate" id="donate" aria-labelledby="donate-heading">
+    <div class="donate__bg-text" aria-hidden="true">GIVE</div>
+    <div class="container donate__content">
+      <p class="section-label section-label--light">make a difference</p>
+      <h2 class="section-heading section-heading--light" id="donate-heading">
+        Every Dollar Gets<br />
+        <span class="marker-text donate__heading-marker">Another Critter Down.</span>
+      </h2>
+      <p class="body-text body-text--light">
+        FuzzyButts Rescue runs entirely on the generosity of animal lovers like you. Your donation funds equipment, training, fuel, and the volunteers who show up every single time an animal needs help.
+      </p>
+
+      <div class="donate__tiers stagger">
+        <div class="donate__tier">
+          <div class="donate__tier-amount">$25</div>
+          <div class="donate__tier-label">Covers one climb harness inspection</div>
+        </div>
+        <div class="donate__tier donate__tier--featured">
+          <div class="donate__tier-badge marker-text">most popular</div>
+          <div class="donate__tier-amount">$50</div>
+          <div class="donate__tier-label">Funds a full rescue response</div>
+        </div>
+        <div class="donate__tier">
+          <div class="donate__tier-amount">$100</div>
+          <div class="donate__tier-label">Trains one new volunteer</div>
+        </div>
+        <div class="donate__tier">
+          <div class="donate__tier-amount">$250</div>
+          <div class="donate__tier-label">Purchases new rescue equipment</div>
+        </div>
+      </div>
+
+      <div class="donate__ctas">
+        <a href="#contact" class="btn btn--primary btn--lg">Donate Now</a>
+        <a href="#contact" class="btn btn--ghost btn--lg">Become a Volunteer</a>
+      </div>
+
+      <div class="donate__annotation" aria-hidden="true">
+        <span class="marker-text">FuzzyButts Rescue is a registered 501(c)(3).<br/>All donations are tax-deductible.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact" aria-labelledby="contact-heading">
+    <div class="container contact__grid">
+      <div class="contact__info">
+        <p class="section-label">get in touch</p>
+        <h2 class="section-heading" id="contact-heading">
+          Animal in a Tree?<br />
+          <span class="underline-accent">Call Us. Now.</span>
+        </h2>
+        <p class="body-text">Don't wait — the longer an animal is stuck, the more stressed and dehydrated they get. We respond fast. Contact details coming soon.</p>
+
+        <ul class="contact__details" role="list">
+          <li class="contact__detail">
+            <span class="contact__detail-icon" aria-hidden="true">📞</span>
+            <span><strong>Emergency Hotline:</strong><br /><em>Phone number coming soon</em></span>
+          </li>
+          <li class="contact__detail">
+            <span class="contact__detail-icon" aria-hidden="true">✉️</span>
+            <span><strong>Email:</strong><br /><em>Email address coming soon</em></span>
+          </li>
+          <li class="contact__detail">
+            <span class="contact__detail-icon" aria-hidden="true">📍</span>
+            <span><strong>Service Area:</strong><br /><em>Service area details coming soon</em></span>
+          </li>
+          <li class="contact__detail">
+            <span class="contact__detail-icon" aria-hidden="true">🕐</span>
+            <span><strong>Hours:</strong><br />24 hours a day, 7 days a week</span>
+          </li>
+        </ul>
+
+        <div class="contact__social" aria-label="Social media links">
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact__form-wrapper">
+        <form class="contact__form" novalidate aria-label="Contact form">
+          <div class="form-group">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Jane Smith" autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="jane@example.com" autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder="(555) 000-0000" autocomplete="tel" />
+          </div>
+          <div class="form-group">
+            <label for="inquiry" class="form-label">What's Going On?</label>
+            <select id="inquiry" name="inquiry" class="form-input form-select">
+              <option value="">Select a reason…</option>
+              <option value="rescue">Animal needs rescue NOW</option>
+              <option value="donate">I want to donate</option>
+              <option value="volunteer">I want to volunteer</option>
+              <option value="education">Community education / event</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Tell Us More</label>
+            <textarea id="message" name="message" class="form-input form-textarea" rows="4" placeholder="Animal type, location, how long they've been stuck, any other details…"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          <p class="form-note marker-text">For animal emergencies, please also call our hotline directly!</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#hero" class="footer__logo" aria-label="FuzzyButts Rescue Home">
+          <span aria-hidden="true">🐱</span>
+          FuzzyButts<span> Rescue</span>
+        </a>
+        <p class="footer__tagline">Getting critters down<br />since day one.</p>
+        <p class="footer__legal">FuzzyButts Rescue is a registered 501(c)(3) nonprofit organization. Tax ID: [coming soon]</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <h3 class="footer__nav-heading">Quick Links</h3>
+        <ul role="list">
+          <li><a href="#mission">Our Mission</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#impact">Impact</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#stories">Stories</a></li>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__contact">
+        <h3 class="footer__nav-heading">Emergency?</h3>
+        <p>Call our 24/7 hotline:</p>
+        <p class="footer__phone marker-text">Contact details coming soon</p>
+        <p class="footer__emergency-note">If an animal is in immediate danger, please also contact your local animal control or fire department.</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; <span id="footer-year">2024</span> FuzzyButts Rescue. All rights reserved.</p>
+        <p>Made with <span class="marker-text" aria-label="orange hearts" style="color: var(--orange);">♥</span> for the animals.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
