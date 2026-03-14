@@ -173,8 +173,27 @@ img {
 
 .hero {
   background-color: #0A0A0A;
+  display: flex;
+  align-items: stretch;
+}
+
+.hero-text {
   padding: 100px 60px 80px;
-  max-width: 800px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-photo {
+  flex: 0 0 45%;
+  max-width: 45%;
+  overflow: hidden;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .hero-eyebrow {
@@ -536,6 +555,13 @@ img {
 .story-card-dark {
   background-color: #1A1A1A;
   border-color: #FF6B00;
+}
+
+.story-photo {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
 }
 
 .story-image {
