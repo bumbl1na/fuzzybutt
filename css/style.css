@@ -50,7 +50,7 @@ img {
 
 .nav-logo {
   font-family: 'Oswald', Arial, sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #F5F5F0;
   letter-spacing: 0.05em;
@@ -77,14 +77,14 @@ img {
   color: #F5F5F0;
 }
 
-.nav-cta {
+.nav-donate {
   background-color: #FF6B00;
   color: #F5F5F0 !important;
   padding: 8px 18px !important;
   border-radius: 4px;
 }
 
-.nav-cta:hover {
+.nav-donate:hover {
   background-color: #CC5500;
 }
 
@@ -878,17 +878,6 @@ img {
 }
 
 .footer-logo span {
-  color: #FF6B00;
-}
-
-.footer-deadwood {
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.55);
-  letter-spacing: 0.04em;
-  margin-bottom: 10px;
-}
-
-.footer-deadwood strong {
   color: #FF6B00;
 }
 
